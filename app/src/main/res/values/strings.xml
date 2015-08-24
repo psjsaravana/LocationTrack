@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocationTeller</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+
+    <string name="notification_msg">Hi, Your Location is being shared with the <b>XXXXXXXXX</b> with a Time interval of <b>XX</b> minutes,Hit Stop Button if you want to terminate the process.</string>
+</resources>
