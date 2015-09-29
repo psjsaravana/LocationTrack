@@ -332,7 +332,7 @@
     <string name="mr_user_route_category_name">Devices</string>
     <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="notification_msg">Hi, Your Location is being shared with the <b>XXXXXXXXX</b> with a Time interval of <b>XX</b> minutes,Hit Stop Button if you want to terminate the process.</string>
+    <string name="notification_msg">Hi, Your Location is being shared with  <b>XXXXXXXXX</b> with a Time interval of <b>XX</b> minutes,Hit Stop Button if you want to terminate the process.</string>
     <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

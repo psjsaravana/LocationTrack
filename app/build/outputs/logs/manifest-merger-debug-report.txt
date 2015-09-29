@@ -39,8 +39,16 @@ uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
 ADDED from AndroidManifest.xml:8:5
 	android:name
 		ADDED from AndroidManifest.xml:8:22
-application
+uses-permission#android.permission.SEND_SMS
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#android.permission.RECEIVE_SMS
 ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+application
+ADDED from AndroidManifest.xml:12:5
 MERGED from com.android.support:appcompat-v7:22.2.1:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.google.android.gms:play-services:7.8.0:19:5
@@ -133,82 +141,90 @@ MERGED from com.google.android.gms:play-services-wearable:7.8.0:19:5
 MERGED from com.google.android.gms:play-services-base:7.8.0:20:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 	android:label
-		ADDED from AndroidManifest.xml:13:9
+		ADDED from AndroidManifest.xml:15:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:11:9
+		ADDED from AndroidManifest.xml:13:9
 	android:icon
-		ADDED from AndroidManifest.xml:12:9
-	android:theme
 		ADDED from AndroidManifest.xml:14:9
+	android:theme
+		ADDED from AndroidManifest.xml:16:9
 activity#com.sri.locationteller.MainActivity
-ADDED from AndroidManifest.xml:15:9
+ADDED from AndroidManifest.xml:17:9
 	android:label
-		ADDED from AndroidManifest.xml:17:13
+		ADDED from AndroidManifest.xml:19:13
 	android:name
-		ADDED from AndroidManifest.xml:16:13
+		ADDED from AndroidManifest.xml:18:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:18:13
+ADDED from AndroidManifest.xml:20:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:19:17
-	android:name
-		ADDED from AndroidManifest.xml:19:25
-category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:21:17
 	android:name
-		ADDED from AndroidManifest.xml:21:27
+		ADDED from AndroidManifest.xml:21:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:23:17
+	android:name
+		ADDED from AndroidManifest.xml:23:27
 activity#com.sri.locationteller.MapActivity
-ADDED from AndroidManifest.xml:24:9
+ADDED from AndroidManifest.xml:26:9
 	android:label
-		ADDED from AndroidManifest.xml:26:13
+		ADDED from AndroidManifest.xml:28:13
 	android:name
-		ADDED from AndroidManifest.xml:25:13
+		ADDED from AndroidManifest.xml:27:13
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from AndroidManifest.xml:29:9
+ADDED from AndroidManifest.xml:31:9
 	android:name
-		ADDED from AndroidManifest.xml:30:13
+		ADDED from AndroidManifest.xml:32:13
 	android:value
-		ADDED from AndroidManifest.xml:31:13
-meta-data#com.google.android.gms.version
-ADDED from AndroidManifest.xml:32:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
-	android:name
 		ADDED from AndroidManifest.xml:33:13
-	android:value
-		ADDED from AndroidManifest.xml:34:13
-activity#com.sri.locationteller.NotificationActivity
-ADDED from AndroidManifest.xml:36:9
-	android:label
-		ADDED from AndroidManifest.xml:38:13
+meta-data#com.google.android.gms.version
+ADDED from AndroidManifest.xml:34:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
 	android:name
-		ADDED from AndroidManifest.xml:37:13
+		ADDED from AndroidManifest.xml:35:13
+	android:value
+		ADDED from AndroidManifest.xml:36:13
+activity#com.sri.locationteller.NotificationActivity
+ADDED from AndroidManifest.xml:38:9
+	android:label
+		ADDED from AndroidManifest.xml:40:13
+	android:name
+		ADDED from AndroidManifest.xml:39:13
+receiver#com.sri.locationteller.AlarmReceiver
+ADDED from AndroidManifest.xml:43:9
+	android:exported
+		ADDED from AndroidManifest.xml:46:13
+	android:enabled
+		ADDED from AndroidManifest.xml:45:13
+	android:name
+		ADDED from AndroidManifest.xml:44:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.2.1:20:5
