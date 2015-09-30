@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,10 +31,18 @@ public class MainActivity extends ActionBarActivity {
 
     public void startLocService(View view)
     {
-        Intent intent=new Intent(this,MapActivity.class);
-        intent.putExtra("phNo",mEdit.getText().toString());
-        intent.putExtra("interval",mySpinner.getSelectedItem().toString());
-        startActivity(intent);
+        if (mEdit.getText().toString().length()>=10)
+        {
+            Intent intent=new Intent(this,MapActivity.class);
+            intent.putExtra("phNo",mEdit.getText().toString());
+            intent.putExtra("interval",mySpinner.getSelectedItem().toString());
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(this.getApplicationContext(),"Please Enter a valid Mobile Number",Toast.LENGTH_LONG).show();
+        }
+
     }
 
     @Override
@@ -51,8 +60,9 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.about) {
+            startActivity(new Intent(MainActivity.this,AboutActivity.class));
+           // return true;
         }
 
         return super.onOptionsItemSelected(item);

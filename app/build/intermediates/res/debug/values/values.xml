@@ -260,6 +260,9 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="aboutAppMsg">This Application can used to Share your Current Location to Your Family or Friends, this will use your internal Messaging Application for sending the message,Operator charges may apply,Application will not validate your Mobile number,So kindly Provide 10 digit valid mobile number,</string>
     <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
@@ -342,6 +345,7 @@
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
     <!-- From: file:/F:/Saravana/Android/Games/Box2D/LocationTeller/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/res/values/wallet_strings.xml -->

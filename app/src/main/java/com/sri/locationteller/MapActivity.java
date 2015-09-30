@@ -27,6 +27,8 @@ public class MapActivity extends Activity {
     GoogleMap map;
     String interval,phNo;
     PendingIntent pendingIntent;
+    Intent alarmIntent;
+    AlarmManager manager;
 
 
     @Override
@@ -36,7 +38,7 @@ public class MapActivity extends Activity {
         Bundle bundle = getIntent().getExtras();
         interval=bundle.getString("interval");
         phNo=bundle.getString("phNo");
-        Log.i("saravana...","saravana"+phNo);
+       // Log.i("saravana...","saravana"+phNo);
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         if ( !locationManager.isProviderEnabled( LocationManager.GPS_PROVIDER ) ) {
             buildAlertMessageNoGps();
@@ -48,10 +50,10 @@ public class MapActivity extends Activity {
         }
     }
 
-   public void  onStopHandle(View view)
+  /* public void  onStopHandle(View view)
     {
-        startActivity(new Intent(this,NotificationActivity.class));
-    }
+       // startActivity(new Intent(this,NotificationActivity.class));
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -91,17 +93,28 @@ public class MapActivity extends Activity {
 
     public void startAlarm()
     {
-        Intent alarmIntent = new Intent(MapActivity.this, AlarmReceiver.class);
+        alarmIntent = new Intent(MapActivity.this, AlarmReceiver.class);
         //alarmIntent.putExtra("phNo",phNo);
         alarmIntent.putExtra("mobileNo",phNo);
-        Log.i("saravana...","saravana"+phNo);
+       // Log.i("saravana...","saravana"+phNo);
         pendingIntent = PendingIntent.getBroadcast(MapActivity.this, 0, alarmIntent,PendingIntent.FLAG_UPDATE_CURRENT);
 
-        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+         manager= (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         int i= Integer.parseInt(interval);
 
         manager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(),
                 (1000 * 60 * i) , pendingIntent);
         Toast.makeText(this, "Alarm Set", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
+    public void onStopHandle(View view)
+    {
+        manager.cancel(pendingIntent);
+        this.finish();
     }
 }

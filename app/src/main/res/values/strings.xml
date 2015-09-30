@@ -7,4 +7,6 @@
     <string name="title_activity_notification">NotificationActivity</string>
 
     <string name="notification_msg">Hi, Your Location is being shared with  <b>XXXXXXXXX</b> with a Time interval of <b>XX</b> minutes,Hit Stop Button if you want to terminate the process.</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="aboutAppMsg">This Application can used to Share your Current Location to Your Family or Friends, this will use your internal Messaging Application for sending the message,Operator charges may apply,Application will not validate your Mobile number,So kindly Provide 10 digit valid mobile number,</string>
 </resources>
